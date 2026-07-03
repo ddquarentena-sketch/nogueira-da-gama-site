@@ -5,7 +5,9 @@ const navLinks = [
   { label: "Início", href: "#inicio" },
   { label: "Sobre", href: "#sobre" },
   { label: "Áreas de Atuação", href: "#areas" },
+  { label: "Novidades", href: "#novidades" },
   { label: "Equipe", href: "#equipe" },
+  { label: "Localização", href: "#localizacao" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -40,7 +42,7 @@ export default function Header() {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -82,7 +84,7 @@ export default function Header() {
       {/* Mobile Menu */}
       <div
         className={`lg:hidden overflow-hidden transition-all duration-500 ${
-          mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          mobileOpen ? "max-h-[32rem] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <nav className="bg-[oklch(0.97_0.008_80)]/98 backdrop-blur-md border-t border-[oklch(0.72_0.12_85)]/20 px-6 py-6 flex flex-col gap-4">

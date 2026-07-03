@@ -26,7 +26,9 @@ export default function Footer() {
               <a href="#inicio" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Início</a>
               <a href="#sobre" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Sobre</a>
               <a href="#areas" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Áreas</a>
+              <a href="#novidades" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Novidades</a>
               <a href="#equipe" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Equipe</a>
+              <a href="#localizacao" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Localização</a>
               <a href="#contato" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Contato</a>
             </nav>
           </div>
