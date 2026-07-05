@@ -92,6 +92,13 @@ export default function CriminalDuty() {
               Ligar para o Plantão
             </a>
 
+            <a
+              href="/plantao-criminal-itaperuna/"
+              className="inline-flex items-center gap-3 px-8 py-4 mt-4 sm:mt-0 sm:ml-4 border border-[oklch(0.72_0.12_85)]/60 text-[oklch(0.72_0.12_85)] text-sm font-bold uppercase tracking-[0.12em] hover:bg-[oklch(0.72_0.12_85)]/10 transition-all duration-300 active:scale-[0.97]"
+            >
+              Plantão criminal em Itaperuna
+            </a>
+
             <p className="text-white/40 text-xs mt-3 flex items-center gap-2">
               <Clock className="w-3 h-3" />
               Atendimento imediato — (22) 99903-4185

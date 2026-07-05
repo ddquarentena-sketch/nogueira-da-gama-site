@@ -5,6 +5,7 @@ const navLinks = [
   { label: "Início", href: "#inicio" },
   { label: "Sobre", href: "#sobre" },
   { label: "Áreas de Atuação", href: "#areas" },
+  { label: "Plantão Criminal", href: "/plantao-criminal-itaperuna/" },
   { label: "Novidades", href: "#novidades" },
   { label: "Instagram", href: "#instagram" },
   { label: "Equipe", href: "#equipe" },
@@ -43,7 +44,7 @@ export default function Header() {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav className="hidden xl:flex items-center gap-5">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -61,7 +62,7 @@ export default function Header() {
         {/* CTA Desktop */}
         <a
           href="#contato"
-          className={`hidden lg:inline-flex items-center px-5 py-2.5 border text-xs font-bold uppercase tracking-[0.12em] transition-all duration-300 ${
+          className={`hidden xl:inline-flex items-center px-5 py-2.5 border text-xs font-bold uppercase tracking-[0.12em] transition-all duration-300 ${
             scrolled
               ? "border-[oklch(0.35_0.15_25)] text-[oklch(0.35_0.15_25)] hover:bg-[oklch(0.35_0.15_25)] hover:text-white"
               : "border-[oklch(0.72_0.12_85)] text-[oklch(0.72_0.12_85)] hover:bg-[oklch(0.72_0.12_85)] hover:text-[oklch(0.2_0.005_285)]"
@@ -73,7 +74,7 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className={`lg:hidden p-2 transition-colors ${
+          className={`xl:hidden p-2 transition-colors ${
             scrolled ? "text-[oklch(0.2_0.005_285)]" : "text-white"
           }`}
           aria-label="Menu"
@@ -84,8 +85,8 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-500 ${
-          mobileOpen ? "max-h-[32rem] opacity-100" : "max-h-0 opacity-0"
+        className={`xl:hidden overflow-hidden transition-all duration-500 ${
+          mobileOpen ? "max-h-[36rem] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <nav className="bg-[oklch(0.97_0.008_80)]/98 backdrop-blur-md border-t border-[oklch(0.72_0.12_85)]/20 px-6 py-6 flex flex-col gap-4">
