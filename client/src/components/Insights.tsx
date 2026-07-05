@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   BookOpen,
   BriefcaseBusiness,
-  CalendarDays,
+  ExternalLink,
   Newspaper,
   Scale,
   ShieldCheck,
@@ -29,13 +29,37 @@ const notes = [
   },
 ];
 
-const activeWork = [
-  "Defesas criminais e medidas urgentes",
-  "Defesa medica em esfera etica, civel e criminal",
-  "Demandas de familia, sucessoes e organizacao patrimonial",
-  "Acoes civeis, indenizatorias e contratuais",
-  "Consultoria empresarial e reducao de riscos",
-  "Atuacao perante tribunais e instancias superiores",
+const publications = [
+  {
+    title: "Beneficio negado pelo INSS",
+    href: "/beneficio-negado-inss-o-que-fazer/",
+    area: "Previdenciario",
+  },
+  {
+    title: "Protocolo antigolpe para clientes",
+    href: "/protocolo-antigolpe-falso-advogado/",
+    area: "Seguranca juridica",
+  },
+  {
+    title: "Plantao criminal e cadeia de custodia",
+    href: "/flagrante-trafico-cadeia-de-custodia-quebrada/",
+    area: "Criminal",
+  },
+  {
+    title: "TCLE e responsabilidade medica",
+    href: "/tcle-mal-redigido-responsabilidade-medica/",
+    area: "Defesa medica",
+  },
+  {
+    title: "Golpe do falso advogado",
+    href: "/golpe-do-falso-advogado-como-identificar/",
+    area: "Prevencao",
+  },
+  {
+    title: "Partilha de bens e contrato retrodatado",
+    href: "/partilha-de-bens-divorcio-contrato-retrodatado/",
+    area: "Familia e patrimonio",
+  },
 ];
 
 export default function Insights() {
@@ -114,13 +138,14 @@ export default function Insights() {
           <div className="lg:col-span-2 bg-[oklch(0.2_0.005_285)] p-8 md:p-10 text-white">
             <Newspaper className="w-8 h-8 text-[oklch(0.72_0.12_85)] mb-5" strokeWidth={1.5} />
             <p className="text-[oklch(0.72_0.12_85)] text-xs font-bold uppercase tracking-[0.18em] mb-3">
-              Em desenvolvimento
+              Publicacoes
             </p>
             <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Espaco para publicacoes do escritorio
+              Artigos e orientacoes do escritorio
             </h3>
             <p className="text-white/65 leading-relaxed">
-              Esta area pode receber artigos breves, alertas juridicos, comunicados institucionais e novidades sobre a atuacao do escritorio.
+              Conteudos escritos para orientar clientes, registrar teses de atuacao e
+              fortalecer a presenca digital do escritorio em temas estrategicos.
             </p>
           </div>
 
@@ -128,17 +153,26 @@ export default function Insights() {
             <div className="flex items-center gap-3 mb-7">
               <BriefcaseBusiness className="w-6 h-6 text-[oklch(0.72_0.12_85)]" strokeWidth={1.5} />
               <h3 className="text-2xl font-bold text-[oklch(0.2_0.005_285)]" style={{ fontFamily: "'Playfair Display', serif" }}>
-                Frentes de atuacao
+                Artigos publicados
               </h3>
             </div>
             <div className="grid sm:grid-cols-2 gap-4">
-              {activeWork.map((item) => (
-                <div key={item} className="flex items-start gap-3 border-b border-[oklch(0.88_0.01_80)] pb-4">
-                  <CalendarDays className="w-4 h-4 text-[oklch(0.72_0.12_85)] mt-1 shrink-0" strokeWidth={1.8} />
-                  <p className="text-[oklch(0.42_0.01_60)] text-sm leading-relaxed">
-                    {item}
-                  </p>
-                </div>
+              {publications.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="group flex items-start gap-3 border-b border-[oklch(0.88_0.01_80)] pb-4 no-underline"
+                >
+                  <ExternalLink className="w-4 h-4 text-[oklch(0.72_0.12_85)] mt-1 shrink-0" strokeWidth={1.8} />
+                  <span>
+                    <span className="block text-[oklch(0.35_0.15_25)] text-[11px] font-bold uppercase tracking-[0.14em] mb-1">
+                      {item.area}
+                    </span>
+                    <span className="block text-[oklch(0.42_0.01_60)] text-sm leading-relaxed group-hover:text-[oklch(0.35_0.15_25)] transition-colors">
+                      {item.title}
+                    </span>
+                  </span>
+                </a>
               ))}
             </div>
           </div>

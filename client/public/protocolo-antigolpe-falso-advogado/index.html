@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protocolo Antigolpe: como estruturamos a comunicação com clientes para neutralizar o golpe do falso advogado | Nogueira da Gama</title>
+    <meta name="description" content="O golpe do falso advogado explora a confiança de quem tem processo em andamento. Conheça o protocolo de segurança que estruturamos para blindar a comunicação entre escritório e cliente." />
+    <meta name="keywords" content="protocolo antigolpe escritório de advocacia" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.nogueiradagamaassessoria.com.br/protocolo-antigolpe-falso-advogado/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Protocolo Antigolpe: como estruturamos a comunicação com clientes para neutralizar o golpe do falso advogado" />
+    <meta property="og:description" content="O golpe do falso advogado explora a confiança de quem tem processo em andamento. Conheça o protocolo de segurança que estruturamos para blindar a comunicação entre escritório e cliente." />
+    <meta property="og:url" content="https://www.nogueiradagamaassessoria.com.br/protocolo-antigolpe-falso-advogado/" />
+    <meta property="og:image" content="https://www.nogueiradagamaassessoria.com.br/assets/site/logo-shield-transparent_a0f663e2.png" />
+    <link rel="icon" href="/assets/site/brand-icon_6ddd09ad.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Protocolo Antigolpe: como estruturamos a comunicação com clientes para neutralizar o golpe do falso advogado","description":"O golpe do falso advogado explora a confiança de quem tem processo em andamento. Conheça o protocolo de segurança que estruturamos para blindar a comunicação entre escritório e cliente.","keywords":"protocolo antigolpe escritório de advocacia","datePublished":"2026-07-05","dateModified":"2026-07-05","author":{"@type":"Organization","name":"Nogueira da Gama Assessoria Jurídica"},"publisher":{"@type":"Organization","name":"Nogueira da Gama Assessoria Jurídica","logo":{"@type":"ImageObject","url":"https://www.nogueiradagamaassessoria.com.br/assets/site/logo-shield-transparent_a0f663e2.png"}},"mainEntityOfPage":"https://www.nogueiradagamaassessoria.com.br/protocolo-antigolpe-falso-advogado/"}</script>
+    <style>
+      :root { --bordo: oklch(0.35 0.15 25); --bordo-light: oklch(0.42 0.14 25); --gold: oklch(0.72 0.12 85); --ivory: oklch(0.97 0.008 80); --charcoal: oklch(0.2 0.005 285); --muted: oklch(0.5 0.01 60); --border: oklch(0.88 0.01 80); }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; min-height: 100%; overflow-x: hidden; background: var(--ivory); color: var(--charcoal); font-family: "Lato", sans-serif; scroll-behavior: smooth; }
+      a { color: inherit; }
+      .container { width: min(1040px, calc(100% - 32px)); margin: 0 auto; }
+      .topbar { position: sticky; top: 0; z-index: 10; background: color-mix(in oklch, var(--ivory), transparent 4%); border-bottom: 1px solid color-mix(in oklch, var(--gold), transparent 72%); backdrop-filter: blur(12px); }
+      .topbar-inner { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+      .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-size: 12px; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; }
+      .brand img { width: 42px; height: auto; }
+      .nav { display: flex; align-items: center; gap: 18px; font-size: 12px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
+      .nav a { text-decoration: none; }
+      .nav a:hover { color: var(--bordo); }
+      .hero { padding: 86px 0 62px; background: linear-gradient(135deg, rgba(35, 25, 25, 0.94), rgba(64, 22, 20, 0.9)), url('/assets/site/library-legal_451bba38.png') center/cover; color: white; }
+      .eyebrow, .kicker { color: var(--gold); font-size: 12px; font-weight: 900; letter-spacing: 0.2em; text-transform: uppercase; }
+      h1, h2, h3 { font-family: "Playfair Display", serif; line-height: 1.08; letter-spacing: 0; }
+      h1 { max-width: 900px; margin: 18px 0 20px; font-size: clamp(38px, 6vw, 66px); }
+      .dek { max-width: 760px; margin: 0; color: rgba(255,255,255,.78); font-family: "Cormorant Garamond", serif; font-size: clamp(21px, 3vw, 28px); line-height: 1.35; }
+      .article-shell { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 44px; padding: 72px 0 86px; align-items: start; }
+      article { background: white; border: 1px solid var(--border); padding: clamp(24px, 5vw, 56px); }
+      article p { margin: 0 0 22px; color: var(--muted); font-size: 1.04rem; line-height: 1.85; }
+      article .lead-text { color: var(--charcoal); font-family: "Cormorant Garamond", serif; font-size: clamp(23px, 3vw, 31px); line-height: 1.42; }
+      article h2 { margin: 44px 0 16px; font-size: clamp(27px, 4vw, 39px); color: var(--charcoal); }
+      .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; color: rgba(255,255,255,.7); font-size: 12px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+      .meta span { border: 1px solid rgba(255,255,255,.18); padding: 8px 10px; }
+      .side { display: grid; gap: 18px; position: sticky; top: 98px; }
+      .side-box, .urgent-box { background: var(--charcoal); color: white; padding: 26px; border: 1px solid color-mix(in oklch, var(--gold), transparent 60%); }
+      .side-box p, .urgent-box p { color: rgba(255,255,255,.7); line-height: 1.65; }
+      .side-box a { display: block; padding: 12px 0; color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.12); }
+      .urgent-box { margin: 42px 0; }
+      .urgent-box h2 { color: white; margin-top: 10px; }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+      .button { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 18px; border: 1px solid var(--gold); text-decoration: none; font-size: 11px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+      .button-primary { border-color: var(--bordo); background: var(--bordo); color: white; }
+      .button-outline.dark { color: var(--gold); }
+      .footer { background: var(--charcoal); color: white; padding: 34px 0; }
+      .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; color: rgba(255,255,255,.58); font-size: 12px; }
+      @media (max-width: 860px) { .nav { display: none; } .article-shell { grid-template-columns: 1fr; gap: 24px; padding-top: 40px; } .side { position: static; } .footer-inner { align-items: flex-start; flex-direction: column; } }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="/"><img src="/assets/site/brand-icon_6ddd09ad.png" alt="" /><span>Nogueira da Gama</span></a>
+        <nav class="nav" aria-label="Navegação principal"><a href="/">Início</a><a href="/#novidades">Publicações</a><a href="/plantao-criminal-itaperuna/">Plantão criminal</a><a href="/#contato">Contato</a></nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero"><div class="container"><p class="eyebrow">PROTOCOLO ANTIGOLPE</p><h1>Protocolo Antigolpe: como estruturamos a comunicação com clientes para neutralizar o golpe do falso advogado</h1><p class="dek">O golpe do falso advogado explora a confiança de quem tem processo em andamento. Conheça o protocolo de segurança que estruturamos para blindar a comunicação entre escritório e cliente.</p><div class="meta"><span>Publicado em 05/07/2026</span><span>protocolo antigolpe escritório de advocacia</span></div></div></section>
+      <div class="container article-shell">
+        <article>
+          <p class="lead-text">Existe hoje, em operação no Brasil inteiro, uma indústria criminosa especializada em um único alvo: pessoas que possuem processos judiciais em andamento. Os criminosos consultam dados processuais disponíveis publicamente, identificam o autor da ação, descobrem o nome do advogado que atua no caso e então entram em contato com a vítima se passando por esse advogado ou por alguém de sua equipe. A mensagem é sempre urgente. O processo &quot;foi liberado&quot;, o alvará &quot;está pronto&quot;, a indenização &quot;será paga hoje&quot;, basta antecipar uma taxa, uma custa, um imposto. A vítima, que confia no próprio advogado, paga. E o dinheiro desaparece.</p>
+<p>Esse crime não explora a ingenuidade da vítima. Explora uma vulnerabilidade estrutural do mercado jurídico: a ausência de protocolos de verificação na comunicação entre escritórios e clientes. Enquanto a maior parte dos escritórios se comunica por canais improvisados, sem qualquer rotina de autenticação, o golpista encontra terreno livre.</p>
+<h2>Os pilares do nosso protocolo</h2>
+<p>Diante desse cenário, estruturamos internamente um protocolo de segurança comunicacional que rege toda a relação do escritório com seus clientes. Por razões óbvias, não revelamos publicamente a mecânica completa (divulgar o funcionamento interno de um sistema de segurança é entregá-lo a quem se pretende barrar), mas seus pilares podem e devem ser conhecidos, inclusive para que sirvam de referência ao mercado.</p>
+<p>Primeiro pilar: canais oficiais únicos e verificáveis. O cliente sabe, desde a contratação, exatamente por quais canais o escritório fala com ele, e é formalmente advertido de que qualquer contato fora desses canais deve ser tratado como suspeito por definição.</p>
+<p>Segundo pilar: regra absoluta sobre dinheiro. Nenhuma solicitação de pagamento, transferência, PIX ou &quot;taxa de liberação&quot; é feita por mensagem. Essa regra não tem exceção, e o cliente é instruído a considerá-la inviolável. Se alguém pede dinheiro em nome do escritório por mensagem, não é o escritório.</p>
+<p>Terceiro pilar: dupla verificação ativa. Toda comunicação que envolva valores, alvarás ou movimentação financeira passa por confirmação em segundo canal, por iniciativa do próprio escritório, antes de qualquer providência do cliente.</p>
+<p>Quarto pilar: educação continuada do cliente. O cliente recebe, ao longo da relação contratual, orientação sobre a anatomia dos golpes em circulação. Cliente informado é a última e mais importante barreira de segurança.</p>
+<h2>O que esse protocolo já demonstrou na prática</h2>
+<p>Tentativas de abordagem fraudulenta contra clientes do escritório já foram identificadas e neutralizadas justamente porque o protocolo funcionou como projetado: o cliente reconheceu o padrão anômalo, não tomou nenhuma providência financeira e acionou imediatamente o canal oficial, permitindo a confirmação da fraude antes de qualquer prejuízo. É exatamente para isso que um protocolo existe. Não para reagir ao golpe consumado, mas para impedir que ele se consume.</p>
+<h2>O que você deve exigir de qualquer advogado</h2>
+<p>Independentemente de quem seja o seu advogado, você tem o direito de perguntar: quais são os canais oficiais do escritório? Existe alguma hipótese em que me será pedido pagamento por mensagem? Como confirmo que um contato é verdadeiro? Se essas perguntas não tiverem resposta clara, o problema não é você. É a ausência de protocolo.</p>
+<p>A advocacia lida com o patrimônio, a liberdade e a dignidade das pessoas. A segurança da comunicação não é um luxo operacional. É parte do próprio dever profissional.</p>
+          <aside class="urgent-box"><p class="kicker">Segurança do cliente</p><h2>Recebeu mensagem suspeita em nome de advogado?</h2><p>Não faça pagamento por mensagem. Confirme por canal oficial antes de qualquer providência. O escritório atende pelo telefone <strong>(22) 99903-4185</strong>.</p></aside>
+        </article>
+        <aside class="side">
+          <div class="side-box"><p class="kicker">Contato</p><h3>Fale com o escritório</h3><p>Atendimento pelo WhatsApp e telefone do escritório: <strong>(22) 99903-4185</strong>.</p><a href="https://wa.me/5522999034185?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o.">WhatsApp</a><a href="tel:+5522999034185">Ligar agora</a></div>
+          <div class="side-box"><p class="kicker">Publicações</p><a href="/protocolo-antigolpe-falso-advogado/">Protocolo antigolpe</a><a href="/flagrante-trafico-cadeia-de-custodia-quebrada/">Plantão criminal e cadeia de custódia</a><a href="/plantao-criminal-itaperuna/">Plantão criminal em Itaperuna</a></div>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer"><div class="container footer-inner"><span>Nogueira da Gama Assessoria Jurídica</span><span>Itaperuna/RJ | (22) 99903-4185</span></div></footer>
+  </body>
+</html>
