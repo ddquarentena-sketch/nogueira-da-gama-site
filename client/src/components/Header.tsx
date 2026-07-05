@@ -6,6 +6,7 @@ const navLinks = [
   { label: "Sobre", href: "#sobre" },
   { label: "Áreas de Atuação", href: "#areas" },
   { label: "Novidades", href: "#novidades" },
+  { label: "Instagram", href: "#instagram" },
   { label: "Equipe", href: "#equipe" },
   { label: "Localização", href: "#localizacao" },
   { label: "Contato", href: "#contato" },

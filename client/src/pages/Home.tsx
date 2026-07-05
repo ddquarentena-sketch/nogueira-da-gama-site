@@ -4,6 +4,7 @@ import About from "@/components/About";
 import PracticeAreas from "@/components/PracticeAreas";
 import CriminalDuty from "@/components/CriminalDuty";
 import Insights from "@/components/Insights";
+import InstagramSection from "@/components/InstagramSection";
 import CTABanner from "@/components/CTABanner";
 import Team from "@/components/Team";
 import Location from "@/components/Location";
@@ -20,6 +21,7 @@ export default function Home() {
       <PracticeAreas />
       <CriminalDuty />
       <Insights />
+      <InstagramSection />
       <CTABanner />
       <Team />
       <Location />
