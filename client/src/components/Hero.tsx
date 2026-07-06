@@ -59,31 +59,33 @@ export default function Hero() {
         {/* Main Headline */}
         <h1
           className="text-white text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-[fadeInUp_1s_ease-out_0.5s_both]"
-          style={{ fontFamily: "'Playfair Display', serif", letterSpacing: "0.02em" }}
+          style={{ fontFamily: "'Playfair Display', serif", letterSpacing: "0" }}
         >
-          Complexidade é o nosso território
+          Há casos que não admitem defesa comum.
         </h1>
 
         {/* Description */}
-        <p className="text-white/75 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed animate-[fadeInUp_1s_ease-out_0.7s_both]">
-          Especialistas dedicados a cada área do Direito, com atuação de excelência
-          em processos de alta complexidade.
+        <p
+          className="text-white/75 text-xl md:text-2xl max-w-3xl mx-auto mb-10 leading-relaxed animate-[fadeInUp_1s_ease-out_0.7s_both]"
+          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+        >
+          Quando a liberdade, o patrimônio ou a reputação estão em jogo, você precisa de mais do que um advogado. Precisa de alguém que domine o processo, a prova e a estratégia, e que esteja ao seu lado em cada passo.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-[fadeInUp_1s_ease-out_0.9s_both]">
+        <div className="flex flex-col items-center justify-center gap-5 animate-[fadeInUp_1s_ease-out_0.9s_both]">
           <a
-            href="#areas"
+            href="https://wa.me/5522999034185?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20conversa."
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-3.5 bg-[oklch(0.35_0.15_25)] text-white text-sm font-bold uppercase tracking-[0.12em] border border-[oklch(0.35_0.15_25)] hover:bg-[oklch(0.42_0.14_25)] transition-all duration-300 active:scale-[0.97]"
           >
-            Nossas Especialidades
+            AGENDE UMA CONVERSA
           </a>
-          <a
-            href="#contato"
-            className="px-8 py-3.5 border border-[oklch(0.72_0.12_85)]/60 text-[oklch(0.72_0.12_85)] text-sm font-bold uppercase tracking-[0.12em] hover:bg-[oklch(0.72_0.12_85)]/10 hover:border-[oklch(0.72_0.12_85)] transition-all duration-300 active:scale-[0.97]"
-          >
-            Agende uma Consulta
-          </a>
+          <div className="max-w-3xl text-white/70 text-sm md:text-base leading-relaxed">
+            <p>Quando o caso é sério, a escolha do advogado é a primeira decisão estratégica.</p>
+            <p>A técnica dos grandes centros. A atenção de quem conhece você pelo nome.</p>
+          </div>
         </div>
       </div>
 

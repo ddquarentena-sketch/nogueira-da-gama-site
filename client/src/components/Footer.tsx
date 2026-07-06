@@ -18,6 +18,9 @@ export default function Footer() {
             <p className="text-white/40 text-xs">
               Assessoria Jurídica de Excelência
             </p>
+            <p className="mt-3 text-[oklch(0.72_0.12_85)] text-sm font-semibold" style={{ fontFamily: "'Playfair Display', serif" }}>
+              Advocacia não se promete. Demonstra-se.
+            </p>
           </div>
 
           {/* Links */}
@@ -27,7 +30,7 @@ export default function Footer() {
               <a href="#sobre" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Sobre</a>
               <a href="#areas" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Áreas</a>
               <a href="/plantao-criminal-itaperuna/" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Plantão Criminal</a>
-              <a href="#novidades" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Novidades</a>
+              <a href="/publicacoes/" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Publicações</a>
               <a href="#instagram" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Instagram</a>
               <a href="#equipe" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Equipe</a>
               <a href="#localizacao" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Localização</a>

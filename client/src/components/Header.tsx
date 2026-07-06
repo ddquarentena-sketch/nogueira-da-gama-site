@@ -6,7 +6,7 @@ const navLinks = [
   { label: "Sobre", href: "#sobre" },
   { label: "Áreas de Atuação", href: "#areas" },
   { label: "Plantão Criminal", href: "/plantao-criminal-itaperuna/" },
-  { label: "Novidades", href: "#novidades" },
+  { label: "Publicações", href: "/publicacoes/" },
   { label: "Instagram", href: "#instagram" },
   { label: "Equipe", href: "#equipe" },
   { label: "Localização", href: "#localizacao" },

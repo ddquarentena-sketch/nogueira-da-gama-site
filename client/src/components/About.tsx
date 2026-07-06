@@ -1,21 +1,27 @@
 import { useEffect, useRef, useState } from "react";
-import { Target, Eye, Heart } from "lucide-react";
+import { BrainCircuit, ClipboardCheck, MessageCircle, ShieldCheck } from "lucide-react";
 
 const pillars = [
   {
-    icon: Target,
-    title: "Missão",
-    text: "Oferecer assessoria jurídica de excelência, atuando com ética, dedicação e profundidade técnica na defesa dos interesses de nossos clientes, transformando a complexidade do Direito em soluções eficazes e resultados concretos.",
+    icon: ClipboardCheck,
+    title: "Profundidade, não volume.",
+    text: "Não somos um escritório de massa. O seu caso recebe estudo individual, estratégia própria e a atenção direta de quem responde por ele.",
   },
   {
-    icon: Eye,
-    title: "Visão",
-    text: "Ser referência nacional em assessoria jurídica de alta complexidade, reconhecidos pela qualidade do trabalho, pela inovação na prática advocatícia e pelo compromisso inabalável com a justiça e os direitos de nossos clientes.",
+    icon: BrainCircuit,
+    title: "Tecnologia a serviço da sua defesa.",
+    text: "Forense digital, cadeia de custódia e inteligência artificial aplicada. Onde outros veem um documento, nós examinamos a integridade da prova que decide o seu caso.",
   },
   {
-    icon: Heart,
-    title: "Valores",
-    text: "Ética e integridade em cada ato processual. Excelência técnica como padrão inegociável. Compromisso com o cliente e com a justiça. Sigilo, respeito e humanização no atendimento. Atualização constante e inovação na prática jurídica.",
+    icon: ShieldCheck,
+    title: "Cuidado até na comunicação.",
+    text: "Somos um dos raros escritórios do país com protocolo antigolpe próprio. Nossos clientes sabem exatamente como o escritório fala com eles, e é por isso que fraudes como a do falso advogado não encontram porta de entrada aqui.",
+    href: "/protocolo-antigolpe-falso-advogado/",
+  },
+  {
+    icon: MessageCircle,
+    title: "Atendimento como método.",
+    text: "A queixa mais comum de quem contrata um advogado é o silêncio. Aqui ela não existe: você acompanha o seu caso, recebe retorno e sabe, a cada fase, exatamente onde está e qual é o próximo passo.",
   },
 ];
 
@@ -52,76 +58,61 @@ export default function About() {
             Quem Somos
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[oklch(0.2_0.005_285)] mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Tradição e Excelência Jurídica
+            A advocacia que os casos difíceis exigem
           </h2>
           <div className="gold-line w-24 mx-auto mb-8" />
-          <p className="max-w-3xl mx-auto text-[oklch(0.5_0.01_60)] text-base md:text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem" }}>
-            A <strong className="text-[oklch(0.35_0.15_25)]">Nogueira da Gama Assessoria Jurídica</strong> reúne
-            especialistas altamente qualificados em cada ramo do Direito. Nossa vocação está nos processos de alta complexidade,
-            onde a profundidade técnica, a estratégia refinada e a dedicação integral fazem a diferença
-            entre um resultado ordinário e uma vitória decisiva.
-          </p>
-        </div>
-
-        {/* Image + Text Layout */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          <div className={`transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}>
-            <div className="relative">
-              <img
-                src="/assets/site/library-legal_451bba38.png"
-                alt="Biblioteca jurídica"
-                className="w-full h-80 object-cover"
-              />
-              {/* Gold border accent */}
-              <div className="absolute -bottom-3 -right-3 w-full h-full border border-[oklch(0.72_0.12_85)]/40 -z-10" />
-            </div>
-          </div>
-          <div className={`transition-all duration-700 delay-400 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}>
-            <h3 className="text-2xl md:text-3xl font-bold text-[oklch(0.2_0.005_285)] mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Sua causa merece a defesa que faz diferença
-            </h3>
-            <p className="text-[oklch(0.5_0.01_60)] leading-relaxed mb-4">
-              Fundado pelo Dr. Daniel Teixeira Nogueira da Gama, nosso escritório nasceu da convicção de que
-              a advocacia de excelência exige mais do que conhecimento jurídico — exige especialização profunda,
-              estratégia refinada e compromisso inabalável com cada cliente.
+          <div className="max-w-4xl mx-auto space-y-5 text-[oklch(0.5_0.01_60)] text-base md:text-lg leading-relaxed text-left md:text-center" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem" }}>
+            <p>
+              A Nogueira da Gama Assessoria Jurídica nasceu de uma convicção: existe uma diferença profunda entre defender um caso e dominá-lo. Nossa vocação são os litígios de alta complexidade, aqueles em que a profundidade técnica, a leitura estratégica da prova e a dedicação integral definem o que estará ao alcance da defesa.
             </p>
-            <p className="text-[oklch(0.5_0.01_60)] leading-relaxed mb-6">
-              Com sede em Itaperuna/RJ e atuação em todo o território nacional, contamos com especialistas
-              dedicados a cada área, preparados para enfrentar os desafios jurídicos mais complexos
-              com a profundidade técnica que cada caso exige.
+            <p>
+              Fundado pelo Dr. Daniel Teixeira Nogueira da Gama, advogado com mais de vinte anos de atuação, ex-Procurador Geral de Município, professor universitário de Direito e autor de estudos científicos sobre prova digital e cadeia de custódia, o escritório uniu duas tradições que raramente caminham juntas: a advocacia clássica, de rigor, sobriedade e combate técnico, e a fronteira tecnológica do Direito, com formação em Inteligência Artificial pelo MIT aplicada diretamente à análise de provas, à forense digital e à estratégia processual.
             </p>
-            <div className="flex items-center gap-4">
-              <div className="h-[1px] w-12 bg-[oklch(0.72_0.12_85)]" />
-              <span className="text-sm font-bold uppercase tracking-[0.15em] text-[oklch(0.35_0.15_25)]">
-                Especialistas em cada área do Direito
-              </span>
-            </div>
+            <p>
+              Com sede em Itaperuna, no Rio de Janeiro, e atuação em todo o território nacional, atendemos casos criminais, médicos, previdenciários, de família e empresariais com um único padrão: cada causa é estudada como se fosse a única. Porque, para quem a vive, ela é.
+            </p>
+            <p>
+              E se você chegou até aqui, provavelmente atravessa um momento difícil, ou quer impedir que ele chegue. Então saiba desde já: aqui você não será um número. Será recebido pelo nome, ouvido com atenção e orientado em linguagem clara, sem juridiquês. Você não precisa entender de Direito. Essa parte é nossa. A sua é dar o primeiro passo.
+            </p>
           </div>
         </div>
 
-        {/* Mission, Vision, Values */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {pillars.map((pillar, i) => (
-            <div
-              key={pillar.title}
-              className={`relative p-8 bg-white border border-[oklch(0.88_0.01_80)] hover:border-[oklch(0.72_0.12_85)]/50 transition-all duration-500 group ${
-                visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-              style={{ transitionDelay: `${600 + i * 150}ms` }}
-            >
-              {/* Gold top line on hover */}
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-[oklch(0.72_0.12_85)] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+        <div className="grid md:grid-cols-2 gap-8">
+          {pillars.map((pillar, i) => {
+            const cardClass = `relative p-8 bg-white border border-[oklch(0.88_0.01_80)] hover:border-[oklch(0.72_0.12_85)]/50 transition-all duration-500 group no-underline ${
+              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`;
+            const cardContent = (
+              <>
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-[oklch(0.72_0.12_85)] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                <pillar.icon className="w-8 h-8 text-[oklch(0.72_0.12_85)] mb-4" strokeWidth={1.5} />
+                <h4 className="text-xl font-bold text-[oklch(0.35_0.15_25)] mb-3 uppercase tracking-[0.08em]" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  {pillar.title}
+                </h4>
+                <p className="text-[oklch(0.5_0.01_60)] text-sm leading-relaxed">
+                  {pillar.text}
+                </p>
+              </>
+            );
 
-              <pillar.icon className="w-8 h-8 text-[oklch(0.72_0.12_85)] mb-4" strokeWidth={1.5} />
-              <h4 className="text-xl font-bold text-[oklch(0.35_0.15_25)] mb-3 uppercase tracking-[0.08em]" style={{ fontFamily: "'Playfair Display', serif" }}>
-                {pillar.title}
-              </h4>
-              <p className="text-[oklch(0.5_0.01_60)] text-sm leading-relaxed">
-                {pillar.text}
-              </p>
-            </div>
-          ))}
+            return pillar.href ? (
+              <a key={pillar.title} href={pillar.href} className={cardClass} style={{ transitionDelay: `${600 + i * 150}ms` }}>
+                {cardContent}
+              </a>
+            ) : (
+              <div key={pillar.title} className={cardClass} style={{ transitionDelay: `${600 + i * 150}ms` }}>
+                {cardContent}
+              </div>
+            );
+          })}
         </div>
+
+        <p
+          className={`mt-16 text-center text-3xl md:text-4xl font-bold text-[oklch(0.35_0.15_25)] transition-all duration-700 delay-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          style={{ fontFamily: "'Playfair Display', serif" }}
+        >
+          Advocacia não se promete. Demonstra-se.
+        </p>
       </div>
     </section>
   );
