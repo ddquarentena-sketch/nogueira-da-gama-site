@@ -34,6 +34,7 @@ const teamMembers = [
 export default function Team() {
   const sectionRef = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);
+  const founder = teamMembers[0];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -58,13 +59,13 @@ export default function Team() {
           className={`text-center mb-16 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <p className="text-[oklch(0.72_0.12_85)] text-sm font-bold uppercase tracking-[0.2em] mb-3">
-            Profissionais
+            Sócio Fundador
           </p>
           <h2
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-[oklch(0.2_0.005_285)] mb-6"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            Nossa Equipe
+            Daniel Nogueira da Gama
           </h2>
           <div className="gold-line w-24 mx-auto mb-8" />
           <p
@@ -74,54 +75,39 @@ export default function Team() {
               fontSize: "1.15rem",
             }}
           >
-            Profissionais altamente qualificados, unidos pela paixão pelo Direito
-            e pelo compromisso com a excelência em cada caso que assumimos.
+            {founder.description}
           </p>
         </div>
 
-        {/* Team Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member, i) => (
-            <div
-              key={member.name}
-              className={`group relative text-center transition-all duration-700 ${
-                visible
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-8"
-              }`}
-              style={{ transitionDelay: `${200 + i * 120}ms` }}
-            >
-              {/* Photo */}
-              <div className="w-36 h-36 mx-auto mb-5 rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-500 group-hover:scale-105 border-2 border-[oklch(0.72_0.12_85)]/20">
-                <img
-                  src={member.photo}
-                  alt={member.name}
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-
-              {/* Gold accent line */}
-              <div className="w-8 h-[2px] bg-[oklch(0.72_0.12_85)] mx-auto mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-              {/* Name */}
-              <h3
-                className="text-lg font-bold text-[oklch(0.2_0.005_285)] mb-1"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-              >
-                {member.name}
-              </h3>
-
-              {/* Role */}
-              <p className="text-[oklch(0.35_0.15_25)] text-xs font-bold uppercase tracking-[0.1em] mb-3">
-                {member.role}
-              </p>
-
-              {/* Description */}
-              <p className="text-[oklch(0.5_0.01_60)] text-sm leading-relaxed">
-                {member.description}
-              </p>
-            </div>
-          ))}
+        <div
+          className={`group relative mx-auto max-w-md text-center transition-all duration-700 ${
+            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+          style={{ transitionDelay: "200ms" }}
+        >
+          <div className="w-44 h-44 mx-auto mb-5 rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-500 group-hover:scale-105 border-2 border-[oklch(0.72_0.12_85)]/20">
+            <img
+              src={founder.photo}
+              alt={founder.name}
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
+          <div className="w-8 h-[2px] bg-[oklch(0.72_0.12_85)] mx-auto mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <h3
+            className="text-lg font-bold text-[oklch(0.2_0.005_285)] mb-1"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
+            {founder.name}
+          </h3>
+          <p className="text-[oklch(0.35_0.15_25)] text-xs font-bold uppercase tracking-[0.1em] mb-6">
+            {founder.role}
+          </p>
+          <a
+            href="/equipe/"
+            className="inline-flex items-center justify-center px-8 py-3.5 border border-[oklch(0.35_0.15_25)] text-[oklch(0.35_0.15_25)] text-xs font-bold uppercase tracking-[0.12em] hover:bg-[oklch(0.35_0.15_25)] hover:text-white transition-all"
+          >
+            Equipe
+          </a>
         </div>
       </div>
     </section>

@@ -32,7 +32,7 @@ export default function Footer() {
               <a href="/plantao-criminal-itaperuna/" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Plantão Criminal</a>
               <a href="/publicacoes/" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Publicações</a>
               <a href="#instagram" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Instagram</a>
-              <a href="#equipe" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Equipe</a>
+              <a href="/equipe/" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Equipe</a>
               <a href="#localizacao" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Localização</a>
               <a href="#contato" className="text-white/50 text-xs uppercase tracking-[0.1em] hover:text-[oklch(0.72_0.12_85)] transition-colors">Contato</a>
             </nav>
