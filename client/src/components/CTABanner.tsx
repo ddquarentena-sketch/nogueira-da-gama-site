@@ -38,7 +38,7 @@ export default function CTABanner() {
           Agende uma consulta e conte com profissionais que tratam cada caso com a seriedade e a dedicação que ele merece.
         </p>
         <a
-          href="https://wa.me/5522999034185?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta."
+          href="https://wa.me/5522999034185?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20conversa."
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-[oklch(0.35_0.15_25)] text-sm font-bold uppercase tracking-[0.12em] hover:bg-[oklch(0.72_0.12_85)] hover:text-[oklch(0.2_0.005_285)] transition-all duration-300 active:scale-[0.97]"

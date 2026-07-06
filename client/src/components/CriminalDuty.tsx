@@ -83,7 +83,7 @@ export default function CriminalDuty() {
 
             {/* CTA - WhatsApp */}
             <a
-              href="https://wa.me/5522999034185?text=Ol%C3%A1!%20Preciso%20de%20atendimento%20urgente%20no%20plant%C3%A3o%20criminal."
+              href="https://wa.me/5522999034185?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20criminal%20urgente."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-[oklch(0.35_0.15_25)] text-white text-sm font-bold uppercase tracking-[0.12em] border border-[oklch(0.35_0.15_25)] hover:bg-[oklch(0.42_0.14_25)] transition-all duration-300 active:scale-[0.97] group"
