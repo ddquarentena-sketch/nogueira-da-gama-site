@@ -11,54 +11,54 @@ import {
 const notes = [
   {
     icon: BookOpen,
-    label: "Informacao util",
-    title: "Atendimento orientado por estrategia",
-    text: "Cada demanda passa por leitura tecnica inicial para definir riscos, urgencias, documentos necessarios e caminhos juridicos possiveis.",
+    label: "Informação útil",
+    title: "Atendimento orientado por estratégia",
+    text: "Cada demanda passa por leitura técnica inicial para definir riscos, urgências, documentos necessários e caminhos jurídicos possíveis.",
   },
   {
     icon: Scale,
     label: "Novidade",
-    title: "Acompanhamento de temas juridicos relevantes",
-    text: "O escritorio acompanha mudancas legislativas, entendimentos dos tribunais e temas de impacto nas areas criminal, civel, medica e empresarial.",
+    title: "Acompanhamento de temas jurídicos relevantes",
+    text: "O escritório acompanha mudanças legislativas, entendimentos dos tribunais e temas de impacto nas áreas criminal, cível, médica e empresarial.",
   },
   {
     icon: ShieldCheck,
-    label: "Prevencao",
-    title: "Atuacao preventiva e contenciosa",
-    text: "A consultoria preventiva ajuda a reduzir riscos antes do conflito. Quando o litigio ja existe, a atuacao e conduzida com planejamento probatorio e processual.",
+    label: "Prevenção",
+    title: "Atuação preventiva e contenciosa",
+    text: "A consultoria preventiva ajuda a reduzir riscos antes do conflito. Quando o litígio já existe, a atuação é conduzida com planejamento probatório e processual.",
   },
 ];
 
 const publications = [
   {
-    title: "Beneficio negado pelo INSS",
+    title: "Benefício negado pelo INSS",
     href: "/beneficio-negado-inss-o-que-fazer/",
-    area: "Previdenciario",
+    area: "Previdenciário",
   },
   {
     title: "Protocolo antigolpe para clientes",
     href: "/protocolo-antigolpe-falso-advogado/",
-    area: "Seguranca juridica",
+    area: "Segurança jurídica",
   },
   {
-    title: "Plantao criminal e cadeia de custodia",
+    title: "Plantão criminal e cadeia de custódia",
     href: "/flagrante-trafico-cadeia-de-custodia-quebrada/",
     area: "Criminal",
   },
   {
-    title: "TCLE e responsabilidade medica",
+    title: "TCLE e responsabilidade médica",
     href: "/tcle-mal-redigido-responsabilidade-medica/",
-    area: "Defesa medica",
+    area: "Defesa médica",
   },
   {
     title: "Golpe do falso advogado",
     href: "/golpe-do-falso-advogado-como-identificar/",
-    area: "Prevencao",
+    area: "Prevenção",
   },
   {
     title: "Partilha de bens e contrato retrodatado",
     href: "/partilha-de-bens-divorcio-contrato-retrodatado/",
-    area: "Familia e patrimonio",
+    area: "Família e patrimônio",
   },
 ];
 
@@ -94,15 +94,15 @@ export default function Insights() {
       <div className="container relative">
         <div className={`text-center mb-16 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <p className="text-[oklch(0.72_0.12_85)] text-sm font-bold uppercase tracking-[0.2em] mb-3">
-            Atualizacoes
+            Atualizações
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[oklch(0.2_0.005_285)] mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Novidades e Informacoes
+            Novidades e Informações
           </h2>
           <div className="gold-line w-24 mx-auto mb-8" />
           <p className="max-w-3xl mx-auto text-[oklch(0.5_0.01_60)] text-base md:text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.18rem" }}>
-            Um espaco para comunicados, orientacoes juridicas e frentes de atuacao do escritorio,
-            sempre com linguagem clara e responsabilidade tecnica.
+            Um espaço para comunicados, orientações jurídicas e frentes de atuação do escritório,
+            sempre com linguagem clara e responsabilidade técnica.
           </p>
         </div>
 
@@ -138,14 +138,14 @@ export default function Insights() {
           <div className="lg:col-span-2 bg-[oklch(0.2_0.005_285)] p-8 md:p-10 text-white">
             <Newspaper className="w-8 h-8 text-[oklch(0.72_0.12_85)] mb-5" strokeWidth={1.5} />
             <p className="text-[oklch(0.72_0.12_85)] text-xs font-bold uppercase tracking-[0.18em] mb-3">
-              Publicacoes
+              Publicações
             </p>
             <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Artigos e orientacoes do escritorio
+              Artigos e orientações do escritório
             </h3>
             <p className="text-white/65 leading-relaxed">
-              Conteudos escritos para orientar clientes, registrar teses de atuacao e
-              fortalecer a presenca digital do escritorio em temas estrategicos.
+              Conteúdos escritos para orientar clientes, registrar teses de atuação e
+              fortalecer a presença digital do escritório em temas estratégicos.
             </p>
           </div>
 

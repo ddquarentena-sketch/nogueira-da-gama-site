@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 const teamMembers = [
   {
     name: "Daniel Nogueira da Gama",
-    role: "Sócio Fundador",
+    role: "Sócio-Fundador",
     photo: "/assets/site/daniel-gama_ee2b1816.webp",
     description:
       "Advogado com ampla experiência em processos de alta complexidade, dedicado à defesa técnica de excelência e ao compromisso inabalável com os interesses de cada cliente.",
@@ -59,7 +59,7 @@ export default function Team() {
           className={`text-center mb-16 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <p className="text-[oklch(0.72_0.12_85)] text-sm font-bold uppercase tracking-[0.2em] mb-3">
-            Sócio Fundador
+            Sócio-Fundador
           </p>
           <h2
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-[oklch(0.2_0.005_285)] mb-6"

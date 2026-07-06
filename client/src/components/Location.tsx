@@ -29,14 +29,14 @@ export default function Location() {
       <div className="container relative">
         <div className={`text-center mb-16 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <p className="text-[oklch(0.72_0.12_85)] text-sm font-bold uppercase tracking-[0.2em] mb-3">
-            Localizacao
+            Localização
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Encontre o Escritorio
+            Encontre o Escritório
           </h2>
           <div className="gold-line w-24 mx-auto mb-8" />
           <p className="max-w-2xl mx-auto text-white/70 text-base md:text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.15rem" }}>
-            Atendimento em Itaperuna/RJ, com atuacao juridica em todo o territorio nacional.
+            Atendimento em Itaperuna/RJ, com atuação jurídica em todo o território nacional.
           </p>
         </div>
 
@@ -44,9 +44,9 @@ export default function Location() {
           <div className={`lg:col-span-2 transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}>
             <div className="h-full border border-white/10 bg-white/[0.04] p-8 md:p-10">
               <MapPin className="w-9 h-9 text-[oklch(0.72_0.12_85)] mb-6" strokeWidth={1.5} />
-              <p className="text-white/50 text-xs uppercase tracking-[0.16em] mb-2">Endereco</p>
+              <p className="text-white/50 text-xs uppercase tracking-[0.16em] mb-2">Endereço</p>
               <h3 className="text-2xl font-bold text-white mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-                Nogueira da Gama Assessoria Juridica
+                Nogueira da Gama Assessoria Jurídica
               </h3>
               <p className="text-white/75 leading-relaxed mb-6">
                 Travessa Darcy Bastos, nº 01<br />
@@ -79,7 +79,7 @@ export default function Location() {
 
           <div className={`lg:col-span-3 min-h-[360px] md:min-h-[460px] transition-all duration-700 delay-400 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}>
             <iframe
-              title="Mapa do escritorio Nogueira da Gama"
+              title="Mapa do escritório Nogueira da Gama"
               src={embedUrl}
               className="w-full h-full min-h-[360px] md:min-h-[460px] border border-white/10"
               loading="lazy"
