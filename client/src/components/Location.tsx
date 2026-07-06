@@ -79,7 +79,7 @@ export default function Location() {
 
           <div className={`lg:col-span-3 min-h-[360px] md:min-h-[460px] transition-all duration-700 delay-400 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}>
             <iframe
-              title="Mapa do escritório Nogueira da Gama"
+              title="Mapa do escritório Nogueira da Gama Assessoria Jurídica"
               src={embedUrl}
               className="w-full h-full min-h-[360px] md:min-h-[460px] border border-white/10"
               loading="lazy"

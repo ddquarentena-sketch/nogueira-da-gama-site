@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <img
               src="/assets/site/logo-horizontal_222b1c64.jpeg"
-              alt="Nogueira da Gama"
+              alt="Nogueira da Gama Assessoria Jurídica"
               className="h-12 w-auto mx-auto md:mx-0 rounded-sm mb-3"
             />
             <p className="text-white/40 text-xs">

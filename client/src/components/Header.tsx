@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "Início", href: "#inicio" },
   { label: "Sobre", href: "#sobre" },
+  { label: "O Fundador", href: "/daniel-nogueira-da-gama/" },
   { label: "Áreas de Atuação", href: "#areas" },
   { label: "Plantão Criminal", href: "/plantao-criminal-itaperuna/" },
   { label: "Publicações", href: "/publicacoes/" },
@@ -36,7 +37,7 @@ export default function Header() {
         <a href="#inicio" className="flex items-center gap-3">
           <img
             src="/assets/site/logo-shield-transparent_a0f663e2.png"
-            alt="Nogueira da Gama"
+            alt="Nogueira da Gama Assessoria Jurídica"
             className={`w-auto transition-all duration-300 ${
               scrolled ? "h-10 md:h-12" : "h-10 md:h-12"
             }`}

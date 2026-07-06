@@ -27,7 +27,7 @@ export default function Hero() {
       <div className="absolute inset-0 parallax-bg">
         <img
           src="/assets/site/hero-office_37e3e0ab.png"
-          alt="Escritório Nogueira da Gama"
+          alt="Escritório Nogueira da Gama Assessoria Jurídica"
           className="w-full h-[120%] object-cover"
         />
       </div>
@@ -44,7 +44,7 @@ export default function Hero() {
         <div className="mb-8 flex justify-center animate-[fadeIn_1.2s_ease-out]">
           <img
             src="/assets/site/logo-shield-transparent_a0f663e2.png"
-            alt="Nogueira da Gama - Escudo"
+            alt="Nogueira da Gama Assessoria Jurídica"
             className="h-28 md:h-36 lg:h-44 w-auto drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
           />
         </div>

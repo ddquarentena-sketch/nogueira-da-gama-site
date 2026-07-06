@@ -15,7 +15,7 @@ const pillars = [
   {
     icon: ShieldCheck,
     title: "Cuidado até na comunicação.",
-    text: "Somos um dos raros escritórios do país com protocolo antigolpe próprio. Nossos clientes sabem exatamente como o escritório fala com eles, e é por isso que fraudes como a do falso advogado não encontram porta de entrada aqui.",
+    text: "Somos um dos raros escritórios do país com um sistema próprio de comunicação segura, o ConfereAdv, que blinda a relação com nossos clientes contra a fraude do falso advogado.",
     href: "/protocolo-antigolpe-falso-advogado/",
   },
   {
@@ -66,7 +66,7 @@ export default function About() {
               A Nogueira da Gama Assessoria Jurídica nasceu de uma convicção: existe uma diferença profunda entre defender um caso e dominá-lo. Nossa vocação são os litígios de alta complexidade, aqueles em que a profundidade técnica, a leitura estratégica da prova e a dedicação integral definem o que estará ao alcance da defesa.
             </p>
             <p>
-              Fundado pelo Dr. Daniel Teixeira Nogueira da Gama, advogado com mais de vinte anos de atuação, ex-Procurador-Geral de Município, professor universitário de Direito e autor de estudos científicos sobre prova digital e cadeia de custódia, o escritório uniu duas tradições que raramente caminham juntas: a advocacia clássica, de rigor, sobriedade e combate técnico, e a fronteira tecnológica do Direito, com formação em Inteligência Artificial pelo MIT aplicada diretamente à análise de provas, à forense digital e à estratégia processual.
+              Fundado pelo Dr. <a href="/daniel-nogueira-da-gama/" className="text-[oklch(0.35_0.15_25)] underline underline-offset-4">Daniel Teixeira Nogueira da Gama</a>, advogado com mais de vinte anos de atuação, ex-Procurador-Geral de Município, professor universitário de Direito e autor de estudos científicos sobre prova digital e cadeia de custódia, o escritório uniu duas tradições que raramente caminham juntas: a advocacia clássica, de rigor, sobriedade e combate técnico, e a fronteira tecnológica do Direito, com formação em Inteligência Artificial pelo MIT aplicada diretamente à análise de provas, à forense digital e à estratégia processual.
             </p>
             <p>
               Com sede em Itaperuna, no Rio de Janeiro, e atuação em todo o território nacional, atendemos casos criminais, médicos, previdenciários, de família e empresariais com um único padrão: cada causa é estudada como se fosse a única. Porque, para quem a vive, ela é.
