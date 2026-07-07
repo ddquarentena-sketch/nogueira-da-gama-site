@@ -13,12 +13,14 @@
     <priority>0.9</priority>
   </url>
   <url>
-    -07-07</lastmod>
+    <loc>https://www.nogueiradagamaassessoria.com.br/publicacoes/</loc>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    -07-07</lastmod>
+    <loc>https://www.nogueiradagamaassessoria.com.br/equipe/</loc>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
